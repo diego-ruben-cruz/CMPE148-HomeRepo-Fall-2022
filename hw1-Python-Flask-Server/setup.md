@@ -7,7 +7,7 @@
     > py -3 -m venv venv
 
     Activate the virtual environment by using the following cmd or powershell input
-    venve\Scripts\activate
+    venv\Scripts\activate
 
     After activating the virtual environment, use the following command to install flask
     $ pip install Flask

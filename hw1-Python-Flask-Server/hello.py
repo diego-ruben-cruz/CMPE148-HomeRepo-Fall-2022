@@ -1,5 +1,7 @@
 """
-    Description: Python file for HW1. Used 
+    Description:	Python file for HW1. 
+					Makes a flask server and sets up 
+					multiple routes for different sub pages. 
 
 	Name: Diego Cruz
 	SID: 013540384
@@ -17,7 +19,18 @@ app = Flask(__name__)
 
 # route() tells flask what URL triggers our function
 @app.route("/")
-def hello_world():
+def homepage():
+    return "<p>homepage</p>"
+    # The function returns a basic "homepage" message.
+    # You can make this more complicated by adding other routes for sub URLs.
+
+@app.route("/hello-world")
+def helloworld():
     return "<p>Hello, World!</p>"
     # The function returns a basic "Hello, World!" message.
     # You can make this more complicated by adding other routes for sub URLs.
+
+@app.route("/hello-world/subURL-example")
+def helloworldsub():
+	return "<p>Hello, subURL!</p>"
+	# The function returns a basic "Hello, subURL!" message.
