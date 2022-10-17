@@ -1,2 +1,2 @@
 # CMPE148-HomeRepo-Fall-2022
- The Home Repository for all python projects
+ Home Repository for all python projects for the CMPE 148 Fall 2022 course
