@@ -9,7 +9,7 @@
 	Course: CMPE 148
 	Section: 02
 	Homework: HW1
-	Date: 16 October 2022 
+	Date: 16 October 2022
 """
 # imports the flask class
 from flask import Flask
