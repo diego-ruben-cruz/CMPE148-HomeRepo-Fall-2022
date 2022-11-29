@@ -18,8 +18,8 @@
 
 ## To Run
     Inside of your virtual environment, use the basic commands:
-    > flask --app hello run
+    > flask --app flaskJWT run
     OR
-    > python -m flask --app hello run
+    > python -m flask --app flaskJWT run
 
 ## Congrats! You have now successfully created and ran a basic flask project!
