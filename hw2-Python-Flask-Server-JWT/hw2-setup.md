@@ -1,4 +1,4 @@
-# How to set up and run a basic flask project
+# How to set up and run a flask project with JWT
 ## Installation
     Install Python @ <https://https://www.python.org/downloads/>
 
