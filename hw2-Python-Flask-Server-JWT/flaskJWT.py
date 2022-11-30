@@ -47,24 +47,22 @@ def token_required(func):
     return decorated
 
 
+# Basic default route that offers a login page or a message communicating that you're logged in. 
 @app.route('/')
 def home():
-    if not session.get('logged_in'):
+    if session.get('logged_in') is None:
         return render_template('login.html')
     else:
         return 'logged in currently'
 
-# Just to show you that a public route is available for everyone
-
-
+# Public route that can be access by all users, auth or not.
 @app.route('/public')
 def public():
     return 'For Public'
 
-# auth only if you copy your token and paste it after /auth?query=XXXXXYour TokenXXXXX
+# auth only if you copy your token and paste it after /auth?query={insert_your_token_here}
 # Hit enter and you will get the message below.
-
-
+# Auth will give a message if your token is accepted.
 @app.route('/auth')
 @token_required
 def auth():
@@ -87,7 +85,7 @@ def login():
 
 @app.route('/logout', methods=['GET'])
 def logout():
-    session['name'] = None
+    session.pop('logged_in', None)
     return redirect('/')
 
 if __name__ == "__main__":
