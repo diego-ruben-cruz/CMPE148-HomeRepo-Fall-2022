@@ -83,6 +83,7 @@ def login():
     else:
         return make_response('Unable to verify', 403, {'WWW-Authenticate': 'Basic realm: "Authentication Failed!'})
 
+# Logout page, resets session and redirects to default route
 @app.route('/logout', methods=['GET'])
 def logout():
     session.pop('logged_in', None)
