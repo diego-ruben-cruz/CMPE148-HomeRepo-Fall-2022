@@ -1,5 +1,7 @@
 # How to set up and run a basic flask project
+
 ## Installation
+
     Install Python @ <https://https://www.python.org/downloads/>
 
     Create a virtual environment in cmdline or powershell by navigating to intended folder
@@ -13,6 +15,7 @@
     $ pip install Flask
 
 ## To Run
+
     Inside of your virtual environment, use the basic commands:
     > flask --app hello run
     OR

@@ -18,11 +18,14 @@ from flask import Flask
 app = Flask(__name__)
 
 # route() tells flask what URL triggers our function
+
+
 @app.route("/")
 def homepage():
     return "<p>homepage</p>"
     # The function returns a basic "homepage" message.
     # You can make this more complicated by adding other routes for sub URLs.
+
 
 @app.route("/hello-world")
 def helloworld():
@@ -30,7 +33,8 @@ def helloworld():
     # The function returns a basic "Hello, World!" message.
     # You can make this more complicated by adding other routes for sub URLs.
 
+
 @app.route("/hello-world/subURL-example")
 def helloworldsub():
-	return "<p>Hello, subURL!</p>"
-	# The function returns a basic "Hello, subURL!" message.
+    return "<p>Hello, subURL!</p>"
+    # The function returns a basic "Hello, subURL!" message.
